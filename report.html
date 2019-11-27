@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
    <head>
-       <title>layout2</title>
-       <meta charset="utf-8">
+       <title>Kim Min Choul Contents Programming</title>
+       <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+       <meta charset="utf-8" />
+       <!-- utf-8, euc-kr -->
+       <meta name="keywords" content="웹 사이트, html, css, gate" />
+       <meta name="subject" content="김민철의 웹사이트 테스트" />
+       <meta name="descriptioin" content="김민철의 웹사이트의 게이트 역할을 하는 페이지 입니다." />
+       <meta name="copyright" content="김민철" />
+       <meta name="author" content="김민철" />
+       <meta name="keywords" content="콘텐츠 프로그래밍, 디미디" />
+
        <style>
           /* CSS 작성하는곳 */
+          
           body{
               margin: 0px;
           }
           header{
-              background-color: #02918c ;
-              color: white ;
-              padding: 10px 50px; /*상하 좌우*/
+              background-color: white ;
+              color: black ;
+              padding: 0px 50px; /*상하 좌우*/
           }
           header>h1{
               margin: 0px ;
           }
-          header>h1>span:nth-child(1){
-              color: white ;
-          }
-          header>h1>span:nth-child(2){
-              color: #cfc91d ;
-          }
+          
+          
           header>nav li{
               float: left ;
-              list-style: none ;
-              padding: 0px 10px ;
+              
+              padding: 0px 50px 0px 0px ;
           }
           header ul{
               margin: 12px 0px;
+              font-size: 25px;
           }
+
           .clear{
             clear: both; /*지우다: 양쪽*/
             height: 0px; /*높이: 0px*/
@@ -40,30 +48,9 @@
           }
           .float_right{
             float: right;
+            padding-top: 25px;
           }
-          #main_visual{
-              background-image: url("im/layout2_visual.jpg");
-              background-size: auto 100% ;
-              background-size: cover;
-              background-repeat: no-repeat;
-              /* repeat, no-repeat, repeat-x, repeat-y, */
-              background-color: black;
-              background-position: 50% 50%; /* 가로 세로 */
-
-              color: white; /* 상속 */
-              text-align: center;
-
-              padding: 100px 0px; /* 상하 좌우 */
-          }
-
-          #main_visual h2{
-              letter-spacing: 10px;
-              font-size: 35px;
-              margin: 8px 0px; /* 상하 좌우 */
-          }
-          #main_visual img{
-              margin-top: 120px;
-          }
+          
           #title_top{
               font-size: 20px;
           }
@@ -124,34 +111,81 @@
               margin-left: auto;
               margin-right: auto;
           }
+          
+              
+             
+          
+          a{
+              text-decoration: none;
+              color: rgb(156, 156, 156);
+              padding: 0px 10px;
+              border-right: solid 1px rgb(156, 156, 156);
+              font-size: 13px;
+          }
+          nav>a:nth-child(10){
+              border: none; /* 경계선: 없음 */
+          }
+         div>nav{
+             text-align: center;
+             background-color: black;
+             padding: 5px 0px;
+         }
+         
+         #font_1{
+            font-family: 'Anton', sans-serif;
+            }
+        #audio{
+            width: 20px;
+        }
        </style>
    </head>
+   <div>
+        <nav>
+             <a href="training.html">HTML 연습</a>
+             <a href="html_part1.html">DPR CREW</a>
+             <a href="html5.html">HTML5</a>
+             <a href="form.html">form</a>
+             <a href="joaquin.html">joaquin</a>
+             <a href="layout1.html">layout1</a>
+             <a href="layout2.html">layout2</a>
+             <a href="layout3.html">layout3</a>
+             <a href="report.html">Final Subject Report</a>
+             <a href="index.html">INDEX</a>
+             
+        </nav>
+     </div>
    <body>
        <div id="wrap">
            <header>
                <h1 class="float_left">
                    <!-- div span -->
-                   <span>MY</span><span>POLIO</span>
+                   <span><img src="final/main logo.JPG"></span>
                </h1>
                
                <nav class="float_right">
-                    <ul>
-                        <li>HOME</li>
-                        <li>ABOUT ME</li>
-                        <li>SERVICE</li>
-                        <li>MY WORK</li>
-                        <li>CONTACT ME</li>
+                    <ul id="font_1">
+                        <li id="font_1">PLAYLIST</li>
+                        <li id="font_1">ARTIST WRITERS</li>
+                        <li id="font_1">NEWS</li>
+                        <li id="font_1">VIDEOS</li>
+                        <li id="font_1">NEWSLETTER</li>
+
+                        <audio controls id= "audio"> <!-- controls 조작버튼 -->
+                            <source src="final/NF - When I Grow Up.mp3" type="audio/mpeg">
+                                <!--동일파일 이여야 함-->
+                                <!-- 브라우저별 플레이 가능한 파일을 선택하여 재생하도록 함-->
+            
+                        </audio>
+                       
                         <div class="clear"></div> <!--float left 해제-->
                     </ul>
                </nav>
                <div class="clear"></div> <!--float left 해제-->
            </header>
-           <div id="main_visual">
-           <div id="title_top">Lorem ipsum dolor sit iusmod tempor</div>
-           <h2>incididunt bore</h2>
-           <div id="title_bottom">Orem ipsum dolor sit amet, consectetur</div>
-           <img src="im/layout2_button.jpg"/>
-           </div>
+           <div>
+           <img width="100%" src="final/main image.jpg"/>
+           </div> 
+          
            <section>
                <h3>ABOUT ME</h3>
                <p>
@@ -226,7 +260,11 @@
                    <li><img src="im/layout2_pic8.jpg"/></li>
                    <div class="clear"></div> <!--float left 해제-->
                </ul>
-           </section>                   
+           </section>   
+           
+           <footer>
+                
+           </footer>
        </div>
    </body>
 
