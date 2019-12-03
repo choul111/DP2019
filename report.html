@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
+      
        <title>Kim Min Choul Contents Programming</title>
        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
        <meta charset="utf-8" />
@@ -62,13 +63,18 @@
           }
 
           section h3{
-              color: #02918c;
-              font-size: 25px;
-              font-weight: normal;
-              margin: 50px 0px;
+              color: black;
+              font-size: 60px;
+              font-weight: bold;
+              margin-bottom: 0px;
+              text-align: left;
+              padding-left: 100px
           }
           section p{
-              margin: 50px 100px;
+              text-align: left;
+              margin-left: 100px;
+              margin-top: 0px ;
+              font-size: 20px;
         
           }
           section #about_list{
@@ -80,8 +86,9 @@
               margin: 0px;
           }
           section>#about_list>li{
-              float: left;
-              width: 200px; /*고정값*/
+              float:left;
+              text-align: center;
+              width: 700px; /*고정값*/
               width: calc(25% - (1px / 4 * 3) - 30px - 30px );
 
               list-style: none;
@@ -115,7 +122,7 @@
               
              
           
-          a{
+          #top{
               text-decoration: none;
               color: rgb(156, 156, 156);
               padding: 0px 10px;
@@ -134,23 +141,94 @@
          #font_1{
             font-family: 'Anton', sans-serif;
             }
+        #font_2{
+            text-decoration: none;
+            color: black;
+           
+        }
         #audio{
             width: 20px;
         }
+
+        #footer {
+
+        position: absolute;
+
+        left: 0;
+
+        
+
+        width: 1420px;
+
+        padding: 15px 0;
+
+        text-align: left;
+
+        color: #fff78b;
+
+        background: black;
+
+        padding-left: 100px
+
+        }
+
+        #topicon{
+            text-align: left;
+            margin-left: 85px; 
+            margin-bottom: 50px;
+            margin-right: 100px;
+        }
+        #tic{
+            
+            text-align: left;
+            margin-left: 90px; 
+            margin-bottom: 0px;
+            height:100%;
+        }
+
+      #leftim{
+          width: 70%;
+        float: left;
+      }
+      #rightim{
+          float:right;
+          width: 250px;
+          margin-right: 70px;
+      }
+      .clear{
+                clear: both; /* 지우다: 양쪽 */
+                height: 0px; /* 높이: 0px */
+                overflow: hidden; /* 넘쳤을때 : 숨김 */
+            }
+      #sm{
+          font-size: 18px;
+      }
+      a:hover{
+          color: #e2d300;
+          font-size: 25px;
+           }
+      a{text-decoration: none;
+            color: black;
+
+      }
+      #parking{
+          text-align: left;
+          margin-left: 100px;
+      }
        </style>
    </head>
    <div>
-        <nav>
-             <a href="training.html">HTML 연습</a>
-             <a href="html_part1.html">DPR CREW</a>
-             <a href="html5.html">HTML5</a>
-             <a href="form.html">form</a>
-             <a href="joaquin.html">joaquin</a>
-             <a href="layout1.html">layout1</a>
-             <a href="layout2.html">layout2</a>
-             <a href="layout3.html">layout3</a>
-             <a href="report.html">Final Subject Report</a>
-             <a href="index.html">INDEX</a>
+        <nav id="top">
+             <a id="top" href="training.html">HTML 연습</a>
+             <a id="top" href="html_part1.html">DPR CREW</a>
+             <a id="top" href="html5.html">HTML5</a>
+             <a id="top" href="form.html">form</a>
+             <a id="top" href="joaquin.html">joaquin</a>
+             <a id="top" href="layout1.html">layout1</a>
+             <a id="top" href="layout2.html">layout2</a>
+             <a id="top" href="layout3.html">layout3</a>
+             <a id="top" href="report.html">Final Subject Report</a>
+             <a id="top" href="index.html">INDEX</a>
              
         </nav>
      </div>
@@ -164,11 +242,11 @@
                
                <nav class="float_right">
                     <ul id="font_1">
-                        <li id="font_1">PLAYLIST</li>
-                        <li id="font_1">ARTIST WRITERS</li>
-                        <li id="font_1">NEWS</li>
-                        <li id="font_1">VIDEOS</li>
-                        <li id="font_1">NEWSLETTER</li>
+                        <li id="font_1"><a  href="training.html">PLAYLIST</a></li>
+                        <li id="font_1"><a  href="training.html">ARTIST WRITERS</a></li>
+                        <li id="font_1"><a  href="training.html">NEWS</a></li>
+                        <li id="font_1"><a  href="training.html">VIDEOS</a></li>
+                        <li id="font_1"><a  href="training.html">NEWSLETTER</a></li>
 
                         <audio controls id= "audio"> <!-- controls 조작버튼 -->
                             <source src="final/NF - When I Grow Up.mp3" type="audio/mpeg">
@@ -186,86 +264,109 @@
            <img width="100%" src="final/main image.jpg"/>
            </div> 
           
-           <section>
-               <h3>ABOUT ME</h3>
-               <p>
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim 
-                    veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea
-                    commodo consequat duis aute irure dolor.
-               </p>
-               <ul id="about_list">
-                   <li>
-                       <img src="im/layout2_icon1.jpg"/>
-                       <dl>
-                            <dt>Title goes here</dt>
-                            <dd>onsectetur adipisicing elit, 
-                                sedo eiusmod tempor incidi et 
-                                dolorerserss eerhfre mag.
-                            </dd>
-                        </dl>
-                   </li>
-                   <li>
-                        <img src="im/layout2_icon2.jpg"/>
-                        <dl>
-                             <dt>Title goes here</dt>
-                             <dd>onsectetur adipisicing elit, 
-                                 sedo eiusmod tempor incidi et 
-                                 dolorerserss eerhfre mag.
-                             </dd>
-                         </dl>
-                    </li>
-                    <li>
-                        <img src="im/layout2_icon3.jpg"/>
-                        <dl>
-                                <dt>Title goes here</dt>
-                                <dd>onsectetur adipisicing elit, 
-                                    sedo eiusmod tempor incidi et 
-                                    dolorerserss eerhfre mag.
-                                </dd>
-                            </dl>
-                    </li>
-                    <li>
-                        <img src="im/layout2_icon4.jpg"/>
-                        <dl>
-                                <dt>Title goes here</dt>
-                                <dd>onsectetur adipisicing elit, 
-                                    sedo eiusmod tempor incidi et 
-                                    dolorerserss eerhfre mag.
-                                </dd>
-                            </dl>
-                    </li> 
-                    <div class="clear"></div>
-               </ul>
-           </section>
-           <section>
-               <h3>MY WORK</h3>
-               <p>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua.                    
-               </p>
-               <ul id="work_list">
-                   <li><img src="im/layout2_pic1.jpg"/></li>
-                   <li><img src="im/layout2_pic2.jpg"/></li>
-                   <li><img src="im/layout2_pic3.jpg"/></li>
-                   <li><img src="im/layout2_pic4.jpg"/></li>
-                   <li><img src="im/layout2_pic5.jpg"/></li>
-                   <li><img src="im/layout2_pic6.jpg"/></li>
-                   <li><img src="im/layout2_pic7.jpg"/></li>
-                   <li><img src="im/layout2_pic8.jpg"/></li>
-                   <div class="clear"></div> <!--float left 해제-->
-               </ul>
-           </section>   
-           
-           <footer>
-                
-           </footer>
-       </div>
-   </body>
 
+
+           <body>
+                
+                        
+                  
+                    <section>
+                        <h3>NF</h3>
+                        <p>
+                            The Search Tour
+                        </p>
+                        <div id="leftim">
+                            <div id="topicon">
+                                <img src="final/sns1.JPG"/>
+                                <img src="final/sns2.JPG"/>
+                                <img src="final/sns3.JPG"/>
+                                <img src="final/sns4.JPG"/>
+                            </div>
+
+                            <div id="tic">
+                                <img width="1000px" src ="final/buy tickets.JPG"/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <img width="300px" src ="final/main.JPG"/>
+                            </div>  
+                            
+                            
+                        </div>
+                        
+                       
+                        
+
+                        <div id="rightim">
+                            <img width="250px" src="final/ticketsbox.JPG"/>
+                        </div>
+                            <div class="clear"></div> <!--float left 해제-->
+
+                        <p id="sm">
+                            After the launch of his current sold out tour, 
+                            chart-topping rapper <b>NF</b> announces the second North
+                            American leg <br/> of <b>The Search Tour,</b>The Search Tour, produced by Live Nation.
+                            <b>The Search Tour’s</b> 28-date Spring 2020 run kicks off April 
+                            9 in Little<br/> Rock, AR and runs through major North American
+                            markets where the current tour will not visit - Chicago, New York,<br/>
+                            Boston, Los Angeles and <b>more - wrapping</b> May 18 in San Diego, CA. 
+                            The Search Tour will come to Tampa’s Yuengling<br/>
+                                Center on Friday, May 1, 2020 at 8:00 PM.
+                         </p>
+                         <br/><br/><br/>
+                         
+
+                         <div id="parking">
+                            <img width="50%" src="final/image.JPG"/>
+                        </div> 
+
+                        <br/><br/>
+
+                        <section>
+                                <h3>Music</h3>
+                                <p id="sm">
+                                     Lorem ipsum dolor sit amet, consectetur 
+                                     adipisicing elit, sed do eiusmod tempor<br/>
+                                     incididunt ut labore et
+                                     dolore magna aliqua. Ut enim ad minim 
+                                     veniam, quis nostrud exercitation<br/> ullamco 
+                                     laboris nisi ut aliquip ex ea
+                                     commodo consequat duis aute irure dolor.
+                                </p>
+                                <ul id="about_list">
+                                    <li>
+                                            <iframe width="230" height="230" src="https://www.youtube.com/embed/lxRwEPvL-mQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </li>
+                                    <li>
+                                            <iframe width="230" height="230" src="https://www.youtube.com/embed/fnlJw9H0xAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                     </li>
+                                     <li>
+                                            <iframe width="230" height="230" src="https://www.youtube.com/embed/E1ZVSFfCk9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                     </li>
+                                     <li>
+                                            <iframe width="230" height="230" src="https://www.youtube.com/embed/LjVFV__K2YI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                     </li> 
+                                     <div class="clear"></div>
+                                </ul>
+                            </section>
+                            <br/>
+                            <br/>
+                            <br/>
+                                
+
+                       
+                        
+       <div id="footer">
+         
+            
+            <div>ⓒ frinal report. 1A_21761014_Kim Min Choul_I just want to finish it.</div>
+         </div>
+  
+   
 </html>
